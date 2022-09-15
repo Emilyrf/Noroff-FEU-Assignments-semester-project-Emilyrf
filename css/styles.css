@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  /*************HEADER**************/
+header img {  
+    width: 160px; height: 100px; 
+  }
+  
+  .hamburger {
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  .identity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #000000;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;  
+    transform: translateY(-100%);
+    transition: transform 0.2s ease ;       
+  }
+  
+  nav:target {
+    transform: translateY(0);
+  }
+  
+  nav ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+  }
+  
+
+  
+  nav a { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px; font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 30px;
+  }
+  
+  nav a:hover { 
+    color: #F07215;
+  }
+
+
+ 
+  .button {
+    background-color: none;
+    color: #ffffff;
+    border: 3px solid;
+    border-radius: 20px;
+    padding: 5px;
+  }
+  .button:hover {
+    color: #F07215;
+  }
+
+  /***********BANNER******************/
+
+  .banner{
+      background-color: #FFC228;
+      width: 100%;
+      padding: 10px;
+      display: block;
+      justify-content: space-between;
+      margin-top: 0;
+  }
+
+  .museumfassade {
+      border-radius: 50%;
+      height: 200px;
+   
+  }
+
+  .right-side{
+      padding: 20px;
+      text-align: center;
+  } 
+
+  .right-side h1{
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 50px;
+  }
+
+  .right-side h2{
+      font-size: 30px;
+  }
+ 
+  .left-side {
+      text-align: center;
+  }
+    /*********CONTENT********/
+  .explore p{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+
+
+
+  
+  /*********FOOTER********/
+
+  footer{
+   border-top: #000000 solid 5px;
+  }
+
+ footer img {  
+    width: 160px; height: 100px; 
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  /****Media Query****/
+
+@media (min-width: 880px) {
+    /*********HEADER********/
+    header {
+      display: flex;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 110px;    
+    }
+  
+    nav {
+      position: static;
+      height: auto;
+      transform: translateY(0);
+    }
+    
+  
+    .hamburger, .close, .logo {
+      display: none;
+    }
+  
+    nav ul {
+      flex-flow: row wrap;
+      justify-content: right;
+      display: inline-flex;
+      margin-right: auto;
+      transition: transform 100ms linear;
+    }
+
+      /***********BANNER******************/
+
+      .banner{
+        display: flex;  
+        margin-top: 110px;
+    }
+    .museumfassade {
+        height: 400px;
+     
+    }
+
+
+}
