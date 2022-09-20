@@ -1,12 +1,14 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-  }
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Open Sans', sans-serif;
+    
+}
 
-  /*************HEADER**************/
-  header img {  
+
+/*************HEADER**************/
+ header img {  
     width: 160px; height: 100px; 
   }
   
@@ -62,8 +64,7 @@
     color: #F07215;
   }
 
-
-  /***********BANNER******************/
+ /***********BANNER******************/
 
   .banner{
       background-color: #FFC228;
@@ -97,9 +98,33 @@
   .left-side {
       text-align: center;
   }
-    /*********CONTENT********/
-
   
+  /*********CONTENT********/
+
+  .section2 {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .new1 , .new2 , .new3 {
+    width: 280px;
+    margin: 0 20px;
+  }
+
+  .news__tittle {
+    text-align: center;
+    margin: 10px 0 5px 0;
+  }
+
+  .new1 {
+    background-color: #F07215;
+  }
 
   
   /*********FOOTER********/
@@ -119,7 +144,7 @@
 
   /****Media Query****/
 
-@media (min-width: 880px) {
+ @media (min-width: 880px) {
     /*********HEADER********/
     header {
       display: flex;
@@ -150,7 +175,8 @@
       /***********BANNER******************/
 
       .banner{
-        display: flex;  
+        display: flex;
+        align-items: center;  
     }
     .museumfassade {
         height: 400px;

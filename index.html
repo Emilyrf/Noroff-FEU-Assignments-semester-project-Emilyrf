@@ -17,7 +17,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <link href="css/reset.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
 
     <link
@@ -43,11 +42,12 @@
     <header>
       <div class="identity">
         <p>
-          <img
-            class="logo"
-            src="images/csmlogo.svg"
-            alt="Community Science Museum logo"
-          />
+          <a href="index.html">
+            <img
+              class="logo"
+              src="images/csmlogo.svg"
+              alt="Community Science Museum logo"
+            /></a>
         </p>
         <a class="hamburger" href="#navbar" aria-label="open main menu">
           <span class="sr-only">Open main menu</span>
@@ -57,18 +57,20 @@
 
       <nav id="navbar">
         <p>
-          <img
-            class="logonav"
-            src="images/csmlogo.svg"
-            alt="Community Science Museum logo"
-          />
+          <a href="index.html">
+            <img
+              class="logonav"
+              src="images/csmlogo.svg"
+              alt="Community Science Museum logo"
+            />
+          </a>
         </p>
         <ul>
           <li><a href="exhibitionspaces.html">Our Exhibitions</a></li>
           <li><a href="visit.html">Visit</a></li>
           <li><a href="explore.html">Explore</a></li>
           <li><a href="getinvolved.html">Get Involved</a></li>
-          <li></li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
         </ul>
         <a class="close" href="#" aria-label="Close main menu">
           <span class="sr-only">Close main menu</span>
@@ -140,9 +142,10 @@
 
       <section class="section2" aria-labelledby="news-and-special-events">
         <h2>News:</h2>
-          <div class="news1">
-            <img src="images/andrew-ruiz-348421.jpg" alt="COLOCARAQUI">
-            <h3>Visiting Professor of Aeronautics</h3>
+        <div class="news">
+          <div class="new1">
+            <img src="images/andrew-ruiz-348421.jpg" alt="Aeronautics pilot">
+            <h3 class="news__tittle">Visiting Professor of Aeronautics</h3>
             <p>
               It is our pleasure to announce that Prof Sheila Widnall from 
               the Massachusetts Institute of Technology will be delivering 3 
@@ -150,17 +153,17 @@
               lies in this exciting ‘space’.</p>
           </div>
 
-          <div class="news2">
+          <div class="new2">
             <img src="images/family museum 307805675.jpg" alt="family takes a selfie in the museum">
-            <h3>Night in the Museum</h3>
+            <h3 class="news__tittle">Night in the Museum</h3>
             <p>Get your family together for an exciting night in the museum as you sleep 
               over beside dinosaurs and science displays. Bring your own sleeping bag and 
               get ready to rough it as we go exploring the wonders of science.</p>
           </div>
 
-          <div class="news3">
+          <div class="new3">
             <img src="images/scientific-2040795_1280-2.jpg" alt="">
-            <h3>Energetica Exhibition on Loan</h3>
+            <h3 class="news__tittle">Energetica Exhibition on Loan</h3>
             <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica 
               exhibition is coming to the Community Science Museum. It’s a series 
               of installations that allow visitors to experience the power of the 
@@ -168,6 +171,7 @@
               to ‘Wind Island’ that shows how turbines are able to use and control wind 
               to create power.</p>
           </div>
+        </div>
 
        </section>
 
