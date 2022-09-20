@@ -63,59 +63,6 @@
   }
 
 
-  /***********BANNER******************/
-
-  .banner{
-      background-color: #FFC228;
-      width: 100%;
-      padding: 10px;
-      display: block;
-      justify-content: space-between;
-      margin-top: 0;
-  }
-
-  .left-side img {
-      border-radius: 50%;
-   
-  }
-
-  .right-side{
-      padding: 20px;
-      text-align: center;
-  } 
-
-  .right-side h1{
-      font-family: 'Cinzel', serif;
-      font-weight: 700;
-      font-size: 50px;
-  }
-
-  .right-side h2{
-      font-size: 30px;
-  }
- 
-  .left-side {
-      text-align: center;
-  }
-    /*********CONTENT********/
-
-  
-
-  
-  /*********FOOTER********/
-
-  footer{
-   border-top: #000000 solid 5px;
-  }
-
- footer img {  
-    width: 160px; height: 100px; 
-  }
-
-  footer a {
-    text-decoration: none;
-    color: #000000;
-  }
 
   /****Media Query****/
 
@@ -147,15 +94,6 @@
       transition: transform 100ms linear;
     }
 
-      /***********BANNER******************/
-
-      .banner{
-        display: flex;  
-    }
-    .museumfassade {
-        height: 400px;
-     
-    }
 
 
 }
