@@ -79,7 +79,7 @@ header img {
 
   /****Media Query****/
 
-@media screen and (min-width: 880px) {
+@media (min-width: 880px) {
     /*********HEADER********/
     header {
       display: flex;
