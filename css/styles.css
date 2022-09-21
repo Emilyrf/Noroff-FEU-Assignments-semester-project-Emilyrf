@@ -100,16 +100,24 @@
   }
   
   /*********CONTENT********/
-
-  .section2 {
-    max-width: 960px;
-    margin: 0 auto;
+  .see-and-do {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+
+  .explore , .exhibitions {
+    width: 280px;
+    margin: 0 20px;
+  }
+
+
+  /*NEWS*/
 
   .news {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .new1 , .new2 , .new3 {
@@ -122,9 +130,21 @@
     margin: 10px 0 5px 0;
   }
 
-  .new1 {
-    background-color: #F07215;
+
+  /*GET INVOLVED*/
+
+  .get-involved {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+
+  .support , .volunteer , .internships {
+    width: 280px;
+    margin: 0 20px;
+  }
+
+
 
   
   /*********FOOTER********/
@@ -178,10 +198,7 @@
         display: flex;
         align-items: center;  
     }
-    .museumfassade {
-        height: 400px;
-     
-    }
+
 
 
 }
