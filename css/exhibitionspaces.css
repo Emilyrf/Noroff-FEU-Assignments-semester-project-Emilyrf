@@ -89,13 +89,15 @@ a:hover {
 }
 
 .nav .menu:hover {
-  color: #FF6004;
+  color: var(--orange);
+  padding: 15px;
 }
 
 /*CONTENT*/
 h1{
   background-color: #000;
   color: var(--orange);
+  padding: 15px;
 }
 .cosmology , .evolution , .biology , .ecology , .robotics  {
   display: flex;
@@ -157,6 +159,10 @@ footer .brand {
   width: 150px;
   height: 120px;
   padding-top: 15px;
+}
+
+footer .column ul {
+  list-style-type: none;
 }
 
 /*MEDIAQUERRY*/
