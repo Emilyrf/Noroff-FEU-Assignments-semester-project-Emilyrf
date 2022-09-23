@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Community Science Museum" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMS| Visit Us</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -11,146 +12,165 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Open+Sans:wght@300;400;700&display=swap" 
     rel="stylesheet">
 
+    <link rel="stylesheet" href="css/visit.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <script src="https://kit.fontawesome.com/7838f15d00.js" crossorigin="anonymous"></script>
 
-    <script
-      src="https://kit.fontawesome.com/7838f15d00.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <link href="css/visit.css" rel="stylesheet" />
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="favicon_io/site.webmanifest" />
-  </head>
+</head>
+
   <body>
     <header>
-      <div class="identity">
+      <div class="nav">
+          <div class="content">
+            <p class="brand">
+              <a href="index.html">
+               <img src="images/csmlogo.svg" alt="Community Science Museum logo">
+             </a>
+            </p>
+              <div class="links nav-items">
+                  <a href="index.html">Home</a>
+                  <a href="exhibitionspaces.html">Our Exhibitions</a>
+                  <a href="explore.html">Explore</a>
+                  <a href="getinvolved.html">Get Involved</a>
+                  <a href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+              <i class="material-icons menu" onclick="menu()">menu</i>
+          </div>
+          <div class="dropdown" id="dropdown">
+              <a href="index.html">Home</a>
+              <a href="exhibitionspaces.html">Our Exhibitions</a>
+              <a href="explore.html">Explore</a>
+              <a href="getinvolved.html">Get Involved</a>
+              <a href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+      </div>
+    </header>    
+
+   <section class="banner">
+      <img class="museumfassade" src="images/pexels-scott-webb-111234 copiar.jpg"  alt="Community Science Museum fassade"/>
+   </section>
+
+   <div class="about">
+     <h1>Community Science Museum</h1>
+      <p> 
+        Join us at the Community Science Museum  where we’re committed to making science accessible to all.
+        Over the course of human history, science has developed from our early understanding of fire, wind, water, 
+        and earth to exploring everything from galaxies far away to the very building blocks of life itself.
+        The aim of our museum is to create a space where everyone can experience the wonders of our discoveries 
+        and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
+        We believe science should not be confined to the textbook, but brought to live through exhibits. 
+        This is why we have over 1000 different exhibits on the many varied subjects of science to explore. 
+        Many of these exhibits are designed for you to interact with and play around to see science come to life 
+        (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).
+        The museum is located at <strong>Strandtoppen 71 - Fevik.</strong>
+        <br>
+        <strong>Explore together!</strong> 
+     </p>
+    </div>
+    
+    <section class="admissions-and-hours">
+      <div class="content admissions">
+        <h2>Admission</h2>
+        <p>The entrance is free for all. 
+        There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed 
+        guide of the museum. 
+        If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.
+        <br></br>
+        <a href="tel:+49 908-49619"><i class="fa-solid fa-phone"></i> +49 908-49619</a>
+        <br>
+        <a href="mailto:emilyregoferreira@gmail.com"><i class="fa-solid fa-envelope-open-text"> </i> cmsfevik@mail.com</a>  
+      </p>
+      </div>
+      <div class="content hours">
+        <h2>Openning Hours</h2>
         <p>
-          <a href="index.html">
-            <img
-              class="logo"
-              src="images/csmlogo.svg"
-              alt="Community Science Museum logo"
-            />
-          </a>
+          <ul>
+            <li>Monday: Closed</li>
+            <li>Tuesday: 10:00 – 16:00</li>
+            <li>Wednesday: 10:00 – 16:00</li>
+            <li>Thursday: 10:00 – 16:00</li>
+            <li>Friday: 10:00 – 19:00</li>
+            <li>Saturday: 9:00 – 16:00</li>
+            <li>Sunday: 9:00 – 13:00</li>
+          </ul>
         </p>
-        <a class="hamburger" href="#navbar" aria-label="open main menu">
-          <span class="sr-only">Open main menu</span>
-          <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </a>
       </div>
 
-      <nav id="navbar">
+      <div class="content accessibility">
+        <h2>Accessibility</h2>
+           <p>
+           The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
+           </p>
+      </div>
+      <div class="content img">
+        <img src="images/acessibility AdobeStock.jpeg" alt="boy in a wheelchair">
+      </div>
+    </section>
+
+    <section class="shop-and-eat">
+      <div class="restaurant content">
+        <h2>Food and drink</h2>
         <p>
-          <a href="index.html">
-             <img
-            class="logonav"
-            src="images/csmlogo.svg"
-            alt="Community Science Museum logo"
-          />
-          </a>
-        </p>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="exhibitionspaces.html">Our Exhibitions</a></li>
-          <li><a href="explore.html">Explore</a></li>
-          <li><a href="getinvolved.html">Get Involved</a></li>
-          <li></li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-        </ul>
-        <a class="close" href="#" aria-label="Close main menu">
-          <span class="sr-only">Close main menu</span>
-          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-        </a>
-      </nav>
-    </header>
-    <main>
-         <img class="museumfassade" src="images/pexels-scott-webb-111234 copiar.jpg" 
-         alt="Community Science Museum fassade"/>
-
-         <h1>Community Science Museum</h1>
-
-         <p> 
-                Join us at the Community Science Museum  where we’re committed to making science accessible to all.
-                Over the course of human history, science has developed from our early understanding of fire, wind, water, 
-                and earth to exploring everything from galaxies far away to the very building blocks of life itself.
-                The aim of our museum is to create a space where everyone can experience the wonders of our discoveries 
-                and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
-                We believe science should not be confined to the textbook, but brought to live through exhibits. 
-                This is why we have over 1000 different exhibits on the many varied subjects of science to explore. 
-                Many of these exhibits are designed for you to interact with and play around to see science come to life 
-                (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).
-                The museum is located at <strong>Strandtoppen 71 - Fevik.</strong>
-                <br></br>
-                <strong>Explore together!</strong> 
-         </p>
-         <br></br>
-         <h2>Admission</h2>
-            <p>The entrance is free for all. 
-            There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed 
-            guide of the museum. 
-            If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.
-            <br></br>
-            <a href="tel:+49 908-49619"><i class="fa-solid fa-phone"></i> +49 908-49619</a>
-            <br>
-            <a href="mailto:emilyregoferreira@gmail.com"><i class="fa-solid fa-envelope-open-text"> </i> cmsfevik@mail.com</a>  
+           There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.
           </p>
-          <br></br>
-          <img src="images/toa-heftiba-412579.png" alt="">
-          <br></br>
-
-         <h2>Openning Hours</h2>
-            <p>
-              <ul>
-                <li>Monday: Closed</li>
-                <li>Tuesday: 10:00 – 16:00</li>
-                <li>Wednesday: 10:00 – 16:00</li>
-                <li>Thursday: 10:00 – 16:00</li>
-                <li>Friday: 10:00 – 19:00</li>
-                <li>Saturday: 9:00 – 16:00</li>
-                <li>Sunday: 9:00 – 13:00</li>
-              </ul>
-            </p>
-
-            <br></br>
-
-         <h2>Accessibility</h2>
-            <p>
-            The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
-            </p>
-            <img src="images/acessibility AdobeStock.jpeg" alt="boy in a wheelchair">
-
-            <br></br>
-
-         <h2>Food and drink</h2>
-            <p>
-            There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
-
-            <img src="images/restaurant adobe stock.jpeg" alt="restaurant at Community Science Museum">
-
-            <br></br>
-
-         <h2>Shop</h2>
-            <p>
-            Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs 
-            that allow you to continue to explore science even after you’ve left the museum.
-            </p>
-            <img src="images/museum shop copiar.jpg" alt="lady at the museum shop">
-    </main>
-  </body>
+          <img src="images/restaurant adobe stock.jpeg" alt="restaurant at Community Science Museum">
+      </div>
+      <div class="shop content">
+        <h2>Shop</h2>
+        <p>
+          Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs 
+          that allow you to continue to explore science even after you’ve left the museum.
+          </p>
+          <img src="images/museum shop copiar.jpg" alt="lady at the museum shop">
+      </div>
+    </section>
+  
+    <footer>
+            <div class="column">
+                <img class="brand" src="images/csmlogo.svg" alt="Community Science Museum logo">
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-location-dot"> </i> Strandtoppen 71</a></li>
+                    <li><a href="tel:+49 908-49619"><i class="fa-solid fa-phone"></i> +49 908-49619</a></li>
+                    <li><a href="mailto:emilyregoferreira@gmail.com"><i class="fa-solid fa-envelope-open-text"> </i> cmsfevik@mail.com</a></li>
+                </ul>   
+            </div>
+            <div class="column">
+                <ul> 
+                    <li> Openning Hours:</li>        
+                    <li> Monday: Closed.</li>
+                    <li>Tuesday: 10:00 – 16:00</li> 
+                    <li>Wednesday: 10:00 – 16:00</li>
+                    <li>Thursday: 10:00 – 16:00</li>
+                    <li>Friday: 10:00 – 19:00</li> 
+                    <li>Saturday: 9:00 – 16:00</li>
+                    <li>Sunday: 9:00 – 13:00</li>
+                  </ul>
+            </div>
+            <div class="column social">
+                <div class="social-logos">
+                    <a class="fa-brands fa-facebook-f" href="https://www.facebook.com" target="_blank"
+                    alt="facebook logo"></a>
+                    
+                      <a class="fa-brands fa-instagram" href="https://instagram.com" target="_blank"
+                      alt="instagram logo"></a>
+                    
+                      <a class="fa-brands fa-twitter" href="https://twitter.com" target="_blank"
+                      alt="twitter logo"></a>
+                  </div>
+                  <a href="">Privacy Policy</a>
+                  <p>Community Science Museum Fevik &copy;</p>
+                  
+            </div>
+            
+    </footer>
+      
+   <script src="js/index.js"></script>
+   </body>
 </html>

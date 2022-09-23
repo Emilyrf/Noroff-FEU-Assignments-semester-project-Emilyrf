@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Community Science Museum" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSM| Exhibition Spaces</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -11,104 +12,150 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Open+Sans:wght@300;400;700&display=swap" 
     rel="stylesheet">
 
+    <link rel="stylesheet" href="css/exhibitionspaces.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <script src="https://kit.fontawesome.com/7838f15d00.js" crossorigin="anonymous"></script>
 
-    <script
-      src="https://kit.fontawesome.com/7838f15d00.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <link href="css/exhibitionspaces.css" rel="stylesheet" />
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="favicon_io/site.webmanifest" />
-  </head>
+ </head>
+
   <body>
     <header>
-      <div class="identity">
+      <div class="nav">
+          <div class="content">
+            <p class="brand">
+              <a href="index.html">
+               <img src="images/csmlogo.svg" alt="Community Science Museum logo">
+             </a>
+            </p>
+              <div class="links nav-items">
+                  <a href="index.html">Home</a>
+                  <a href="visit.html">Visit</a>
+                  <a href="explore.html">Explore</a>
+                  <a href="getinvolved.html">Get Involved</a>
+                  <a href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+              <i class="material-icons menu" onclick="menu()">menu</i>
+          </div>
+          <div class="dropdown" id="dropdown">
+              <a href="index.html">Home</a>
+              <a href="visit.html">Visit</a>
+              <a href="explore.html">Explore</a>
+              <a href="getinvolved.html">Get Involved</a>
+              <a href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+       </div>
+    </header> 
+
+    <h1>Exhibition Spaces</h1>  
+
+    <section class="cosmology">
+      <div class="content-cosmology"> 
+        <h2>Cosmology</h2>
         <p>
-          <a href="index.html">
-            <img
-            class="logo"
-            src="images/csmlogo.svg"
-            alt="Community Science Museum logo"
-          />
-          </a>
+          Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by. Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.
         </p>
-        <a class="hamburger" href="#navbar" aria-label="open main menu">
-          <span class="sr-only">Open main menu</span>
-          <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </a>
       </div>
+      <div class="content-cosmology"> 
+       <img src="images/celso-405219.jpg" alt="the phases of the moon">
+      </div>
+    </section>
 
-      <nav id="navbar">
-        <p>
-          <a href="index.html">
-            <img
-            class="logonav"
-            src="images/csmlogo.svg"
-            alt="Community Science Museum logo"
-           />
-          </a>
+    <section class="evolution">
+
+      <div class="content-evolution"> 
+        <img src="images/mammoth-1257288_1920.jpg" alt="mamoth skeleton">
+      </div>
+      <div class="content-evolution">
+        <h2>Evolution</h2>
+        <p> 
+          For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world.   Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.
         </p>
-        <ul>
-          <li><a href="visit.html">Visit</a></li>
-          <li><a href="explore.html">Explore</a></li>
-          <li><a href="getinvolved.html">Get Involved</a></li>
-          <li></li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-        </ul>
-        <a class="close" href="#" aria-label="Close main menu">
-          <span class="sr-only">Close main menu</span>
-          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-        </a>
-      </nav>
-    </header>
-    <main>
-      <h1>Exhibition Spaces</h1>
-      <h2>Cosmology</h2>
-      <p>
-        Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by. Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.
-      </p>
-      <img src="images/celso-405219.jpg" alt="">
-      
-      <h2>Evolution</h2>
-      <p> 
-        For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world.   Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.
-      </p>
-      <img src="images/mammoth-1257288_1920.jpg" alt="">
+      </div> 
+    </section>
 
-      <h2> Biology and Medicine</h2>
-      <p>
-        From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant. 
-        Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.
-      </p>
-      <img src="images/jesse-orrico-60373.jpg" alt="">
+    <section class="biology">
+      <div class="content-biology">
+        <h2> Biology and Medicine</h2>
+        <p>
+          From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant. 
+          Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.
+        </p>
+      </div>
+      <div class="content-biology">
+        <img src="images/jesse-orrico-60373.jpg" alt="human skull">
+      </div>
+    </section>
 
-      <h2>Robotics and AI</h2>
-      <p>
-        The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.
-      </p>
-      <img src="images/girl and robot _AdobeStock.jpeg" alt="">
+    <section class="robotics">
+      <div class="content-robotics">
+        <img src="images/girl and robot _AdobeStock.jpeg" alt="girl holding robot's hand">
+      </div>
+      <div class="content-robotics">
+        <h2>Robotics and AI</h2>
+        <p>
+          The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.
+        </p>
+      </div>
+    </section>
 
-      <h2>Ecology</h2>
-      <p>
-        As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet. In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.
-      </p>
-      <img src="images/genoa-956405_1920.jpg" alt="">
-    </main>
-  </body>  
+      <section class="ecology">
+        <div class="content-ecology">
+          <h2>Ecology</h2>
+          <p>
+            As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet. In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.
+          </p>
+        </div>
+        <div class="content-ecology">
+          <img src="images/genoa-956405_1920.jpg" alt="ants sculpture">
+        </div>
+      </section>
+
+      <footer>
+        <div class="column">
+            <img class="brand" src="images/csmlogo.svg" alt="Community Science Museum logo">
+        </div>
+        <div class="column">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-location-dot"> </i> Strandtoppen 71</a></li>
+                <li><a href="tel:+49 908-49619"><i class="fa-solid fa-phone"></i> +49 908-49619</a></li>
+                <li><a href="mailto:emilyregoferreira@gmail.com"><i class="fa-solid fa-envelope-open-text"> </i> cmsfevik@mail.com</a></li>
+            </ul>   
+        </div>
+        <div class="column">
+            <ul> 
+                <li> Openning Hours:</li>        
+                <li> Monday: Closed.</li>
+                <li>Tuesday: 10:00 – 16:00</li> 
+                <li>Wednesday: 10:00 – 16:00</li>
+                <li>Thursday: 10:00 – 16:00</li>
+                <li>Friday: 10:00 – 19:00</li> 
+                <li>Saturday: 9:00 – 16:00</li>
+                <li>Sunday: 9:00 – 13:00</li>
+              </ul>
+        </div>
+        <div class="column social">
+            <div class="social-logos">
+                <a class="fa-brands fa-facebook-f" href="https://www.facebook.com" target="_blank"
+                alt="facebook logo"></a>
+              
+                <a class="fa-brands fa-instagram" href="https://instagram.com" target="_blank"
+                alt="instagram logo"></a>
+              
+                <a class="fa-brands fa-twitter" href="https://twitter.com" target="_blank"
+                alt="twitter logo"></a>
+            </div>
+            <a href="">Privacy Policy</a>
+            <p>Community Science Museum Fevik &copy;</p>
+            
+        </div>
+        
+    </footer>
+
+   <script src="js/index.js"></script>
+ </body> 
+</html> 

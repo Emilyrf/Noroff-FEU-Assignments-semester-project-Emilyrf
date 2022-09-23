@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="description" content="Community Science Museum" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Community Science Museum" />
     <title>Community Science Museum | Home</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -11,244 +13,177 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Open+Sans:wght@300;400;700&display=swap" 
     rel="stylesheet">
 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <script src="https://kit.fontawesome.com/7838f15d00.js" crossorigin="anonymous"></script>
 
-    <script
-      src="https://kit.fontawesome.com/7838f15d00.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <link href="css/styles.css" rel="stylesheet" />
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="favicon_io/site.webmanifest" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="identity">
-        <p>
-          <a href="index.html">
-            <img
-              class="logo"
-              src="images/csmlogo.svg"
-              alt="Community Science Museum logo"
-            /></a>
-        </p>
-        <a class="hamburger" href="#navbar" aria-label="open main menu">
-          <span class="sr-only">Open main menu</span>
-          <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </a>
-      </div>
-
-      <nav id="navbar">
-        <p>
-          <a href="index.html">
-            <img
-              class="logonav"
-              src="images/csmlogo.svg"
-              alt="Community Science Museum logo"
-            />
-          </a>
-        </p>
-        <ul>
-          <li><a href="exhibitionspaces.html">Our Exhibitions</a></li>
-          <li><a href="visit.html">Visit</a></li>
-          <li><a href="explore.html">Explore</a></li>
-          <li><a href="getinvolved.html">Get Involved</a></li>
-          <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-        </ul>
-        <a class="close" href="#" aria-label="Close main menu">
-          <span class="sr-only">Close main menu</span>
-          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-        </a>
-      </nav>
-    </header>
-   <main>
-     <div class="banner">
-           <div class="left-side">
-              <picture>
-               <source media="(max-width: 750px" srcset="responsiveimages/csm-facade-1-s.png" type="image/png">
-               <source media="(max-width: 1050px" srcset="responsiveimages/csm-facade-1-m.png" type="image/png">
-               <img src="responsiveimages/csm-facade-1-big-2.png" alt="Community Science Museum facade">
-              </picture>
+        <div class="nav">
+            <div class="content">
+                <p class="brand">
+                    <a href="index.html"></a>
+                     <img src="images/csmlogo.svg" alt="Community Science Museum logo">
+                   </a>
+                </p>
+    
+                <div class="links nav-items">
+                    <a href="exhibitionspaces.html">Our Exhibitions</a>
+                    <a href="visit.html">Visit</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="getinvolved.html">Get Involved</a>
+                    <a href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <i class="material-icons menu" onclick="menu()">menu</i>
             </div>
+            <div class="dropdown" id="dropdown">
+                <a href="exhibitionspaces.html">Our Exhibitions</a>
+                <a href="visit.html">Visit</a>
+                <a href="explore.html">Explore</a>
+                <a href="getinvolved.html">Get Involved</a>
+                <a href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+    </header>    
 
-            <div class="right-side">
-                <h2>Welcome to the</h2>
-               
-                <h1>Community Science Museum</h1>
-                <br></br>
-                <p>
+    <section class="banner">
+        <div class="content"><img src="images/scott-webb-102825.png" alt="Community Science Museum facade"></div>
+        <div class="content">
+            <h2>Welcome to the</h2>
+            <h1>Community Science Museum</h1>
+            <p>
                 The Community Science Museum opens this winter at Fevik. Come and
                 discover more about us!
-                </p>
-                <br></br> 
-                <a href="visit.html">Read more</a>
-           </div>
-     </div >
-
-      <section class="section1" aria-labelledby="see-and-do">
-        <div class="see-and-do">
-         <div class="explore">
-           <h2>Explore:</h2>
-           <picture>
-            <source media="(max-width: 750px" srcset="responsiveimages/boyrv-s.png" type="image/png">
-            <source media="(max-width: 1050px" srcset="responsiveimages/boyrv-m.png" type="image/png">
-            <img src="responsiveimages/boyrv-b-2.png" alt="boy wearing a VR headset">
-           </picture>
-           <p>
-             Are you a young person looking to learn more about science? A teacher?
-             or a researcher?
-             You can learn about Newtonian physics, be part of our Young Stars club 
-             and even meet our resident Woolly Mammoth!
-             The Community Science Museum has plenty to do and see for everyone!
-           </p>
-           
-                <a href="explore.html">Read more</a>
-         </div>
-      
-
-         <div class="exhibitions">
-           <h2>Exhibition Spaces</h2>
-           <picture>
-           <source media="(max-width: 750px" srcset="responsiveimages/skeletons-s.png" type="image/png">
-           <source media="(max-width: 1050px" srcset="responsiveimages/skeletons-m.png" type="image/png">
-           <img src="responsiveimages/skeletons-b.png" alt="three human skeletons and one animal skeleton">
-          </picture>
-           <p>
-             Are you interested in the stars, human evolution or artificial inteligence?
-             The Community Science Museum  counts with five exhibition spaces where you can 
-             learn about of Cosmology, Evolution, Biology, Robotics and Ecology.
-           </p>
-           
-           <a href="exhibitionspaces.html">Read more</a>
-         </div>
-        </div>
-
-      </section>
-
-      <section class="section2" aria-labelledby="news-and-special-events">
-        <h2>News:</h2>
-        <div class="news">
-          <div class="new1">
-            <picture>
-              <source media="(max-width: 750px" srcset="responsiveimages/aeronautic-pilot-s.png">
-              <source media="(max-width: 1050px" srcset="responsiveimages/aeronautic-pilot-m.png">
-              <img src="responsiveimages/aeronautic-pilot-b.png" alt="Aeronautics pilot">
-             </picture>
-            <h3 class="news__tittle">Visiting Professor of Aeronautics</h3>
-            <p>
-              It is our pleasure to announce that Prof Sheila Widnall from 
-              the Massachusetts Institute of Technology will be delivering 3 
-              lectures on the development of aeronautics and where the future 
-              lies in this exciting ‘space’.
             </p>
-          </div>
+            <a class="readmorebtn" href="visit.html">Read more</a>
+        </div>
+    </section>
 
-          <div class="new2">
-            <picture>
-              <source media="(max-width: 750px" srcset="responsiveimages/family-in-the-museum-s.png">
-              <source media="(max-width: 1050px" srcset="responsiveimages/family-in-the-museum-m.png">
-              <img src="responsiveimages/family-in-the-museum-b.png" alt="family takes a selfie in the museum">
-             </picture>
-            <h3 class="news__tittle">Night in the Museum</h3>
-            <p>Get your family together for an exciting night in the museum as you sleep 
-              over beside dinosaurs and science displays. Bring your own sleeping bag and 
-              get ready to rough it as we go exploring the wonders of science.</p>
-          </div>
+    <section class="see-and-do">
+        <div class="content explore">
+            <h2>Explore</h2>
+            <img src="images/billetto-editorial-334686.png" alt="boy wearing a VR headset">
+            <p>
+                Are you a young person looking to learn more about science? A teacher?
+                or a researcher?
+                You can learn about Newtonian physics, be part of our Young Stars club
+                and even meet our resident Woolly Mammoth!
+                The Community Science Museum has plenty to do and see for everyone!
+            </p>
+            <a class="readmorebtn" href="explore.html">Read more</a>
+        </div>
+        <div class="content exhibition">
+            <h2>Exhibition Spaces</h2>
+            <img src="images/skeleton-414543_1920.png" alt="three human skeletons and one animal skeleton">
+            <p>
+                Are you interested in the stars, human evolution or artificial inteligence?
+                The Community Science Museum counts with five exhibition spaces where you can
+                learn about of Cosmology, Evolution, Biology, Robotics and Ecology.
+            </p>
+            <a class="readmorebtn" href="exhibitionspaces.html">Read more</a>
+        </div>
+    </section>
 
-          <div class="new3">
-            <picture>
-              <source media="(max-width: 750px" srcset="responsiveimages/energica-s.png">
-              <source media="(max-width: 1050px" srcset="responsiveimages/energica-m.png">
-              <img src="responsiveimages/energica-b.png" alt="Woman works in the power installation">
-             </picture>
-            <h3 class="news__tittle">Energetica Exhibition on Loan</h3>
-            <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica 
-              exhibition is coming to the Community Science Museum. It’s a series 
-              of installations that allow visitors to experience the power of the 
-              elements as we harness them. From solar energy powering lighting, 
-              to ‘Wind Island’ that shows how turbines are able to use and control wind 
-              to create power.</p>
-          </div>
+    <section class="news">
+        <h2 class="title">News</h2>
+        <div class="news-content">
+            <div class="content news1">
+                <img src="images/andrew-ruiz-348421.jpg" alt="Aeronautics pilot">
+                <h3>Visiting Professor of Aeronautics</h3>
+                <p>
+                    It is our pleasure to announce that Prof Sheila Widnall from
+                    the Massachusetts Institute of Technology will be delivering 3
+                    lectures on the development of aeronautics and where the future
+                    lies in this exciting ‘space’.
+                </p>
+            </div>
+            <div class="content news2">
+                <img src="images/family museum 307805675.jpg" alt="family takes a selfie in the museum">
+                <h3>Night in the Museum</h3>
+                <p>Get your family together for an exciting night in the museum as you sleep
+                    over beside dinosaurs and science displays. Bring your own sleeping bag and
+                    get ready to rough it as we go exploring the wonders of science.</p>
+            </div>
+            <div class="content news3">
+                <img src="images/scientific-2040795_1280-2.jpg" alt="Woman works in the power installation">
+                <h3>Energetica Exhibition on Loan</h3>
+                <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica
+                    exhibition is coming to the Community Science Museum. It’s a series
+                    of installations that allow visitors to experience the power of the
+                    elements as we harness them. From solar energy powering lighting,
+                    to ‘Wind Island’ that shows how turbines are able to use and control wind
+                    to create power.</p>
+            </div>
+        </div>
+    </section>
+    <section class="get-involved">
+        <h2 class="title">Get Involved</h2>
+        <div class="get-involved-content">
+            <div class="content support">
+                <h3>Support</h3>
+                <p>There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community. You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.</p>
+            </div>
+            <div class="content volunteer">
+                <h3>Volunteer</h3>
+                <p>A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and volunteers come together to discuss ideas for future exhibits and strategies for the museum. You can help volunteer in a number of different spheres. Please contact us if you’d like to find out more about how you can get involved.</p>
+            </div>
+            <div class="content internships">
+                <h3>Internships:</h3>
+                <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum. You’ll be learning from a number of different academics and people who are passionate about science and sharing it with the wider community.
+                </p>
+            </div>
         </div>
 
-       </section>
-
-       <section class="section3" aria-labelledby="get-involved">
-         <h2>Get Involved</h2>
-         <div class="get-involved">
-           <div class="support">
-             <h3 class="get-involved__tittle">Support</h3>
-             <p>
-                There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community. You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.
-             </p>
-           </div>
-
-            <div class="volunteer">
-             <h3 class="get-involved__tittle">Volunteer</h3>
-             <p>
-              A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and volunteers come together to discuss ideas for future exhibits and strategies for the museum. You can help volunteer in a number of different spheres. Please contact us if you’d like to find out more about how you can get involved.
-             </p>
-            </div>
-
-            <div class="internships">
-              <h3 class="get-involved__tittle">Internships:</h3>
-              <p>
-                Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum. You’ll be learning from a number of different academics and people who are passionate about science and sharing it with the wider community.
-              </p>
-            </div>
-
-           </div>
-         </div>
-       </section>
-
-
-    </main>
+    </section>
     <footer>
-      <div class="footer">
-          <img
-            class="logofooter"
-            src="images/csmlogoblack.svg"
-            alt="Community Science Museum logo"
-          />
-
-        <ul>
-          <li><a href=""><i class="fa-solid fa-location-dot"> </i> Strandtoppen 71</a></li>
-          <li><a href="tel:+49 908-49619"><i class="fa-solid fa-phone"></i> +49 908-49619</a></li>
-          <li><a href="mailto:emilyregoferreira@gmail.com"><i class="fa-solid fa-envelope-open-text"> </i> cmsfevik@mail.com</a></li>          
-          <li><i class="fa-solid fa-clock"></i> Monday: Closed. Tuesday, Wednesday,Thursday: 10:00 – 16:00 Friday: 10:00 – 19:00 Saturday: 9:00 – 16:00 Sunday: 9:00 – 13:00</li>
-        </ul>
-      </nav>
-
-      <div class="social-logos">
-        <a class="fa-brands fa-facebook-f" href="https://www.facebook.com" target="_blank"
-        alt="facebook logo"></a>
-       
-         <a class="fa-brands fa-instagram" href="https://instagram.com" target="_blank"
-         alt="instagram logo"></a>
-       
-         <a class="fa-brands fa-twitter" href="https://twitter.com" target="_blank"
-         alt="twitter logo"></a>
-     </div>
-     <a href="">Privacy Policy</a>
-     <p>Community Science Museum Fevik &copy;</p>
-     
+        <div class="column">
+            <img class="brand" src="images/csmlogo.svg" alt="Community Science Museum logo">
+        </div>
+        <div class="column">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-location-dot"> </i> Strandtoppen 71</a></li>
+                <li><a href="tel:+49 908-49619"><i class="fa-solid fa-phone"></i> +49 908-49619</a></li>
+                <li><a href="mailto:emilyregoferreira@gmail.com"><i class="fa-solid fa-envelope-open-text"> </i> cmsfevik@mail.com</a></li>
+            </ul>   
+        </div>
+        <div class="column">
+            <ul> 
+                <li> Openning Hours:</li>        
+                <li> Monday: Closed.</li>
+                <li>Tuesday: 10:00 – 16:00</li> 
+                <li>Wednesday: 10:00 – 16:00</li>
+                <li>Thursday: 10:00 – 16:00</li>
+                <li>Friday: 10:00 – 19:00</li> 
+                <li>Saturday: 9:00 – 16:00</li>
+                <li>Sunday: 9:00 – 13:00</li>
+              </ul>
+        </div>
+        <div class="column social">
+            <div class="social-logos">
+                <a class="fa-brands fa-facebook-f" href="https://www.facebook.com" target="_blank"
+                alt="facebook logo"></a>
+               
+                 <a class="fa-brands fa-instagram" href="https://instagram.com" target="_blank"
+                 alt="instagram logo"></a>
+               
+                 <a class="fa-brands fa-twitter" href="https://twitter.com" target="_blank"
+                 alt="twitter logo"></a>
+             </div>
+             <a href="">Privacy Policy</a>
+             <p>Community Science Museum Fevik &copy;</p>
+             
+        </div>
+        
     </footer>
-  </body>
+
+    <script src="js/index.js"></script>
+</body>
+
 </html>
