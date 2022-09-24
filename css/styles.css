@@ -1,11 +1,10 @@
-
 :root {
-  --lightgrey: #F6F6F6;
-  --yellow: #FFC228;
-  --lightblue: #059BF7;
-  --orange: #F27405;
-  --pink: #FD7CD4;
-  --lightpurple: #B1BBFE;
+  --lightgrey: #f6f6f6;
+  --yellow: #ffc228;
+  --lightblue: #059bf7;
+  --orange: #f27405;
+  --pink: #fd7cd4;
+  --lightpurple: #b1bbfe;
 }
 
 * {
@@ -15,7 +14,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 /*HEADER*/
 
@@ -89,7 +88,7 @@ a:hover {
 }
 
 .nav .menu:hover {
- color: var(--orange);
+  color: var(--orange);
 }
 
 /*BANNER*/
@@ -102,37 +101,43 @@ a:hover {
 
 .banner .content {
   padding: 15px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .banner img {
   border-radius: 50%;
 }
 
-.banner h1{
-  font-family: 'Cinzel', serif;
+.banner h1 {
+  font-family: "Cinzel", serif;
   font-weight: 700;
   font-size: 50px;
 }
 
 /*READ MORE BTN*/
+
 .readmorebtn {
-  text-decoration: none;
   color: #fff;
   background-color: #000;
-  border-radius: 35px;
   padding: 5px;
-  width: fit-content; 
+  border-radius: 40px;
+  margin-top: 50px;
+  width: fit-content;
 }
 .readmorebtn:hover {
-  color: var(--orange); 
+  color: var(--orange);
 }
-
 
 /*CONTENT*/
 .see-and-do {
   display: flex;
   justify-content: center;
+}
+
+.see-and-do h2 {
+  padding: 10px;
 }
 
 .see-and-do .content {
@@ -147,9 +152,10 @@ a:hover {
   object-fit: cover;
 }
 
-
 .see-and-do p {
   width: 100%;
+  padding-bottom: 50px;
+
 }
 
 .explore {
@@ -161,10 +167,7 @@ a:hover {
 }
 
 /*NEWS*/
-.news h2{
-  color: var(--orange);
-  background-color: #000;
-}
+
 .news-content {
   display: flex;
   justify-content: center;
@@ -195,9 +198,6 @@ a:hover {
 .news3 {
   background-color: var(--lightblue);
 }
-.title {
-  text-align: center;
-}
 
 /*GET INVOLVED*/
 .get-involved-content {
@@ -211,9 +211,11 @@ a:hover {
   text-align: center;
 }
 
-.get-involved .title {
+.title {
   color: var(--orange);
   background-color: #000;
+  padding: 15px;
+  text-align: center;
 }
 
 .get-involved p {
@@ -226,28 +228,34 @@ a:hover {
 }
 
 .volunteer {
-  background-color: #B1BBFE;
+  background-color: var(--lightpurple);
 }
 
-.internships{
+.internships {
   background-color: var(--pink);
 }
 
 /*FOOTER*/
-footer{
+footer {
   background-color: #000;
   color: #fff;
-  display: flex;
   align-items: center;
+  display: grid;
+  grid-template-areas: "column column column column";
 }
 
 footer .column {
-  flex-basis: 25%;
-  padding: 15px;
+  grid-area: "column";
+  min-height: 220px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 footer .social {
-   text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 footer .brand {
@@ -262,59 +270,69 @@ footer .column ul {
   list-style-type: none;
 }
 
+.social-logos {
+  font-size: 30px;
+}
+
 /*MEDIAQUERRY*/
+
+@media only screen and (max-width: 992px) {
+  footer {
+      grid-template-areas:
+          "column column"
+          "column column";
+  }
+
+}
+
 @media only screen and (max-width: 768px) {
   .nav .content .links {
-      display: none;
+    display: none;
   }
 
   .nav .content .menu {
-      display: initial;
+    display: initial;
   }
 
   .banner {
-      flex-direction: column;
+    flex-direction: column;
+    text-align: center;
   }
 
   .see-and-do {
-      flex-direction: column;
-
+    flex-direction: column;
   }
 
   .see-and-do p {
-      padding: 15px 50px;
+    padding: 15px 50px;
   }
 
   .news-content {
-      flex-direction: column;
+    flex-direction: column;
   }
   .get-involved-content {
-      flex-direction: column;
+    flex-direction: column;
   }
-
-  footer {
-      flex-direction: column;
-      align-items: baseline;
-  }
-
-  footer .social {
-      text-align: left;
-  }
-  
 }
 
 @media only screen and (max-width: 480px) {
   img {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .nav .brand {
-      max-width: 50%;
+    max-width: 50%;
   }
 
   footer .brand {
-      max-width: 50%;
+    max-width: 50%;
   }
 
+  footer {
+    grid-template-areas:
+        "column"
+        "column"
+        "column"
+        "column";
+  }
 }
-

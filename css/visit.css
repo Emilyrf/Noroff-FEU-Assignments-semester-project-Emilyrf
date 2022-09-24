@@ -97,13 +97,20 @@ a:hover {
 .banner img {
   width: 100vw;
 
+
 }
 
 /*CONTENT*/
-
+body{
+  background-color: var(--pink);
+}
 .about p {
   text-align: center;
 
+ }
+ .about {
+   background-color: var(--pink);
+   padding: 15px;
  }
 
 h1{
@@ -117,6 +124,25 @@ ul {
   list-style-type: none;
 }
 
+.admissions {
+  background-color: var(--yellow);
+}
+
+.hours {
+  background-color: var(--lightblue);
+}
+
+.accessibility {
+  background-color: var(--orange);
+}
+
+.shop {
+  background-color: var(--yellow);
+}
+
+.restaurant {
+  background-color: var(--lightpurple);
+}
 .admissions-and-hours , .shop-and-eat  {
   display: flex;
   justify-content: center;
@@ -132,12 +158,25 @@ ul {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  padding-top: 10px;
+}
+
+.admissions-and-hours a{
+  color: #000;
+}
+.admissions-and-hours a:hover{
+  background-color: var(--orange);
+  border-radius: 40px;
+  
 }
 
  .shop-and-eat p , .admissions-and-hours p {
   width: 100%;
 }
 
+.shop-and-eat p {
+  min-height: 70px;
+}
 
 
 /*FOOTER*/
@@ -166,6 +205,17 @@ footer .brand {
 }
 
 /*MEDIAQUERRY*/
+@media only screen and (max-width: 992px) {
+  footer {
+      grid-template-areas:
+          "column column"
+          "column column";
+  }
+  .shop-and-eat p {
+    min-height: 90px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .nav .content .links {
       display: none;

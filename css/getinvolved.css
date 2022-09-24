@@ -101,11 +101,7 @@ h1{
 
 .container {
   display: flex;
-  justify-content: space-around
-}
 
-.container p {
-  max-width: 500px;
 }
 
 .support , .volunteer , .internship {
@@ -123,6 +119,10 @@ h1{
 }
 .container img {
 object-fit: fill;
+}
+
+.container a {
+  color: #000;
 }
 
 
@@ -152,6 +152,16 @@ footer .brand {
 }
 
 /*MEDIAQUERRY*/
+@media only screen and (max-width: 992px) {
+  footer {
+      grid-template-areas:
+          "column column"
+          "column column";
+  }
+  .img1{
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .nav .content .links {
       display: none;
@@ -161,7 +171,7 @@ footer .brand {
       display: initial;
   }
 
-  .container img {
+  .img2 , .img1 {
     display: none;
   }
 
