@@ -1,15 +1,25 @@
 ## Community Science Museum - Semester project :framed_picture:
 
-![semester-project-1](https://user-images.githubusercontent.com/104759694/224011955-95756e6a-6ac1-443d-9e9c-67342a6cde82.png)
-
-
-
 ## Project Description :star:
 
 The project is a semester assigment for the Front-End Development course at Noroff.
 
-Briefing:
+![semester-project-1](https://user-images.githubusercontent.com/104759694/224011955-95756e6a-6ac1-443d-9e9c-67342a6cde82.png)
+
+
+## Briefing :memo:
 An interactive science museum called the Community Science Museum is opening in your town/city. Its core target audience is primary and middle school children (7-15) and families with young children. The museum wants a website that is informative and appealing, that will attract both middle school pupils and their parents. The site should appeal to youngsters without pandering; it should take for granted that the audience is inquisitive and intelligent. The website should be informative and engaging, but should encourage viewers to visit the museum itself. The website should be responsive and be easy to use on a variety of devices.
+
+- The site must be have a design that appeals to the target audience.
+- The site must have at least 4-6 pages.
+- Compositional principles, typography, and color schemes must be considered.
+- Your HTML should be semantic and neatly indented.
+- The site should use external CSS style sheets which follow the DRY principle.
+- The site should download quickly, and not be overly "heavy". Images should not be over 200kb.
+- The site should take WCAG principles into consideration, especially regarding hierarchy, navigation, and color usage.
+- The site should be responsive, attractive, and easy to use on a variety of devices.
+- The site should show consideration for content strategy and SEO (consider your use of meta tags and alt text).
+- The GitHub repo for the project should be set to private. You do not need to submit this with your project.
 
 ## Built With :wrench:
 
@@ -21,48 +31,27 @@ An interactive science museum called the Community Science Museum is opening in 
 
 https://communitysciencemuseum-emily.netlify.app/
 
-## Getting Started
+## Getting Started :hammer_and_wrench:
 
 ### Installing
 
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone git@github.com:Emilyrf/Noroff-FEU-Assignments-semester-project-Emilyrf.git
 ```
 
-2. Install the dependencies:
-
-```
-npm install
-```
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+2. Open in live server.
 
-To run the app, run the following commands:
 
-```bash
-npm run start
-```
 
-## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+## Contact :speech_balloon:
 
-## Contact
+[My LinkedIn page](www.linkedin.com](https://www.linkedin.com/in/emily-rego-ferreira/)
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-[My Twitter page](www.twitter.com)
 
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
