@@ -51,7 +51,7 @@ git clone git@github.com:Emilyrf/Noroff-FEU-Assignments-semester-project-Emilyrf
 
 ## Contact :speech_balloon:
 
-[My LinkedIn page](www.linkedin.com](https://www.linkedin.com/in/emily-rego-ferreira/)
+[My LinkedIn page](https://www.linkedin.com/in/emily-rego-ferreira/)
 
 
 
